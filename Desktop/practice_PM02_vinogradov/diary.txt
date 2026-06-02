@@ -1,0 +1,13 @@
+Дата: 01.06.2025
+Часов: 8
+
+Выполненные работы:
+1. Установка MySQL Workbench 8.0 и MySQL Server
+2. Установка Visual Studio Code (расширения: Python, MySQL Syntax, GitLens)
+3. Установка Python 3.13 (добавлен в PATH)
+4. Установка библиотеки mysql-connector-python через pip
+5. Проверка работы tkinter
+6. Установка и настройка Git (имя, email)
+7. Создание репозитория на GitHub
+
+Подпись: Виноградов Андрей
