@@ -1,0 +1,1 @@
+SELECT * FROM hotel_variant5.номера;
