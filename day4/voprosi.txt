@@ -1,0 +1,40 @@
+1 INNER JOIN и LEFT JOIN отличие
+
+INNER JOIN показывает только тех гостей у которых есть бронирования
+LEFT JOIN показывает всех гостей даже тех у кого нет бронирований
+
+2 GROUP BY для чего
+
+GROUP BY собирает одинаковые записи в группы чтобы посчитать количество или сумму
+
+Пример
+SELECT room_type COUNT FROM rooms GROUP BY room_type
+Это покажет сколько номеров каждого типа
+
+3 DELETE без WHERE
+
+Удалит все строки из таблицы полностью
+
+4 IN или EXISTS что быстрее
+
+EXISTS быстрее потому что он останавливается при первом совпадении
+IN собирает все данные сначала и только потом сравнивает
+
+5 Как выполнить выделенную часть в MySQL Workbench
+
+Выделить мышью нужный код и нажать Ctrl Shift Enter
+
+6 Транзакция это
+
+Это группа операций которые либо все выполняются либо все отменяются
+
+Пример
+START TRANSACTION
+UPDATE rooms SET price = price 115 WHERE room_type = Lux
+COMMIT
+
+Если вместо COMMIT написать ROLLBACK то изменения отменятся
+
+7 Добавить столбец через ALTER TABLE
+
+ALTER TABLE guests ADD COLUMN email VARCHAR 100
