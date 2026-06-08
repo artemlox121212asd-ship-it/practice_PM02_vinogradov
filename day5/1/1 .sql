@@ -1,0 +1,3 @@
+SET SQL_SAFE_UPDATES = 0;
+CREATE DATABASE Variant5_day5;
+USE Variant5_day5;

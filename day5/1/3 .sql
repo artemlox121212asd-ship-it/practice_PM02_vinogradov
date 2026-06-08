@@ -1,0 +1,6 @@
+CREATE TABLE Guests (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    full_name VARCHAR(150) NOT NULL,
+    passport VARCHAR(20) NOT NULL UNIQUE,
+    phone VARCHAR(20) NOT NULL
+);
