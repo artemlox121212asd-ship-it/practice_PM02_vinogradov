@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["valid", "reasons", "risk_score"],
+  "properties": {
+    "valid": {
+      "type": "boolean",
+      "description": "Признак валидности бронирования"
+    },
+    "reasons": {
+      "type": "array",
+      "description": "Список причин невалидности",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risk_score": {
+      "type": "number",
+      "description": "Оценка риска мошенничества/отмены",
+      "minimum": 0.0,
+      "maximum": 1.0
+    }
+  }
+}
