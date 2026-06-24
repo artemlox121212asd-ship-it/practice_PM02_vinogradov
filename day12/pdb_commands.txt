@@ -1,0 +1,37 @@
+# ============================================
+# pdb_commands.txt - Команды для pdb
+# Альтернатива .pdbrc (без проблем с Pylance)
+# ============================================
+
+# Точки останова
+break src/variant_5_broken.py:30 if i == 2
+break src/variant_5_broken.py:36 if value > 100
+break src/variant_5_broken.py:45 if depth > 90
+break src/variant_5_broken.py:68
+break src/variant_5_broken.py:115 if batch_num == 3
+break src/variant_5_broken.py:122
+
+# Алиасы
+alias pl p locals()
+alias pg p globals()
+alias pc l
+alias ps where
+
+# Настройки
+set prompt (Pdb) 
+set display
+set show_retval on
+
+# Автоматическое отображение переменных
+display batch_num
+display depth
+display i
+display value
+display n
+display result
+
+# Команды при запуске
+p "=== КОНФИГУРАЦИЯ ЗАГРУЖЕНА ==="
+p "=== ТОЧКИ ОСТАНОВА УСТАНОВЛЕНЫ ==="
+break
+l

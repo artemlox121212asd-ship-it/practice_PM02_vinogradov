@@ -1,0 +1,18 @@
+Начинаем обработку 3 партий по 5 элементов
+Партия 0: получено 5 элементов
+Партия 1: получено 5 элементов
+Партия 2: получено 5 элементов
+StopIteration поймана: 
+
+=== ТОП-10 ПОТРЕБЛЕНИЯ ПАМЯТИ ===
+variant_5_broken.py:76: size=7840 KiB (+7840 KiB), count=1000 (+1000)
+variant_5_broken.py:78: size=1000 KiB (+1000 KiB), count=10 (+10)
+variant_5_broken.py:45: size=512 KiB (+512 KiB), count=128 (+128)
+
+Ошибка: 
+Traceback (most recent call last):
+  File "src/variant_5_broken.py", line 164, in <module>
+    result = process_main(3, 5)
+  File "src/variant_5_broken.py", line 115, in process_main
+    batch = next(gen)
+StopIteration
